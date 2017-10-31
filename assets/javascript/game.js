@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     //resets the game
     function reset() {
-        targetNumber;
+        targetNumber = Math.floor(Math.random() * (120 - 19)) + 19;
         $("#target-number").html(targetNumber);
         console.log(targetNumber);
         crystal1; 
