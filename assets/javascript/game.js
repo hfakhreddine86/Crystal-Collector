@@ -1,8 +1,8 @@
 //Global Variables
-var crystal1 = Math.floor(Math.random() * 12) + 1;
-var crystal2 = Math.floor(Math.random() * 12) + 1;
-var crystal3 = Math.floor(Math.random() * 12) + 1;
-var crystal4 = Math.floor(Math.random() * 12) + 1;
+var crystal1 = Math.floor((Math.random() * 12) + 1);
+var crystal2 = Math.floor((Math.random() * 12) + 1);
+var crystal3 = Math.floor((Math.random() * 12) + 1);
+var crystal4 = Math.floor((Math.random() * 12) + 1);
 
 
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
     totalScore = 0;
 
     //generates random target number
-    var targetNumber = Math.floor(Math.random() * 120) + 19;
+    var targetNumber = Math.floor(Math.random() * (120 - 19)) + 19;
     console.log(targetNumber);
     crystal1;
     console.log(crystal1);
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     //resets the game
     function reset() {
-        targetNumber = Math.floor(Math.random() * 120) + 19;
+        targetNumber;
         $("#target-number").html(targetNumber);
         console.log(targetNumber);
         crystal1; 
