@@ -44,10 +44,10 @@ $(document).ready(function () {
         targetNumber = Math.floor(Math.random() * (120 - 19)) + 19;
         $("#target-number").html(targetNumber);
         console.log(targetNumber);
-        crystal1; 
-        crystal2; 
-        crystal3; 
-        crystal4; 
+        crystal1 = Math.floor((Math.random() * 12) + 1);
+        crystal2 = Math.floor((Math.random() * 12) + 1);
+        crystal3 = Math.floor((Math.random() * 12) + 1);
+        crystal4 = Math.floor((Math.random() * 12) + 1);
 
         totalScore = 0;
         $("#total").html(totalScore);
